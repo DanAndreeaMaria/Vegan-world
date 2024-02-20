@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--title of the page-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #D4E2D4;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-size: 50px; color: #FF6969">Vegan world</a>
+          </div>
+        </nav>
+      </div>
+
+      <!--first card section-->
+      <h3 style="text-align: center; padding: 50px; color: #F31559;">Salads</h3>
+      <div class="card-group"> 
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1524859880053-f595797051c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-1" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Veggie noodles</h5>
+            <p class="card-text">Noodles and veggies that you've left in the fridge. Play with ingredients and add a sweet-sour sauce.</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalRecipe">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalMethod">Method</button>
+          <!-- Modal for recipe-->
+          <div class="modal fade" id="exampleModalRecipe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie noodles</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Carrot
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Bell pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Broccoli
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 can</span>
+                      Mushrooms
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 pack</span>
+                      Noodles
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3 tbsp</span>
+                      Olive oil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1/2 tsp</span>
+                      Salt
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">2 tsp</span>
+                      Corn starch
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3 tbsp</span>
+                      Rice vinegar
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">4 tbsp</span>
+                      Soy sauce
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Maple syrup
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModalMethod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie noodles</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Chop the vegetables, carrot, bell pepper, broccoli and mushrooms.</li>
+                    <li class="list-group-item">Take a pan, pour 3 tbsp of olive oil and let it heat.</li>
+                    <li class="list-group-item">Put the vegetables in the pan and let them cook until soften.</li>
+                    <li class="list-group-item">Meanwhile, boil the noodles according package instructions, set aside.</li>
+                    <li class="list-group-item">Prepare the sauce now, put the soy sauce, rice vinegar, honey/maple syrup and the cornstarch.</li>
+                    <li class="list-group-item">Mix everything back in the pan and let the mixture cook for about 3-5 minutes until the sauce gets thicker.</li>
+                    <li class="list-group-item">Serve with fresh chopped green onions and sprinkled sesame seeds.</li>
+                  </ul>
+                  </ul>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://plus.unsplash.com/premium_photo-1694860349246-bbf0aa383714?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-2" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Tofu bowl salad</h5>
+            <p class="card-text">Fried tofu, avocado, pickled onion, herbs, sesame seeds and a sweet sauce.</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-2M">Method</button>
+          <!-- Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-2">Tofu bowl salad</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">240g</span>
+                      Tofu
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Avocado
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">100g</span>
+                      Cabbage
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Red onion
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Olive oil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1/2 tsp</span>
+                      Salt and pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">20g</span>
+                      Corn starch
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3 tsp</span>
+                      Rice vinegar
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">2 tbsp</span>
+                      Soy sauce
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Honey
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Sesame seeds
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-2M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Tofu bowl salad</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Prepare the tofu: Chop it in cubes, roll them in a mixture of cornstarch, salt and pepper.</li>
+                    <li class="list-group-item">Heat up the oil in a pan and fry the cubes until golden brown.</li>
+                    <li class="list-group-item">Chop the vegetables as you desire.</li>
+                    <li class="list-group-item">Prepare the sauce made from rice vinegar, soy sauce, honey and a bit of salt.</li>
+                    <li class="list-group-item">Mix them in a bowl and serve with sesame seeds and sliced hot chilli peppers.</li>
+                  </ul>
+                  </ul>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://plus.unsplash.com/premium_photo-1694977744347-b149ef1e90a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-3" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Veggie rice bowl</h5>
+            <p class="card-text">Rice, roasted tofu and your favourite veggies, seeds and greens. Add soy sauce, tahini and enjoy!</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-3">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-3M">Method</button>
+          <!-- Modal for ingredients -->
+          <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-3">Veggie rice bowl</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">240g</span>
+                      Rice
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 block</span>
+                      Tofu
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Avocado
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">100g</span>
+                      Red cabbage
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">0.5</span>
+                      Carrot
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 handful</span>
+                      Cashew
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">10g</span>
+                      Sesame seeds
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1/2 tsp</span>
+                      Salt and pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Cornstarch
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Tahini
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3 tsp</span>
+                      Rice vinegar
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Honey
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3 tsp</span>
+                      Olive oil
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for method -->
+          <div class="modal fade" id="exampleModal-3M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie rice bowl</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Boil the rice in salted water according to package instructions.</li>
+                    <li class="list-group-item">Prepare the tofu by chopping it in cubes, roll them in a mixture of cornstarch, salt and pepper.</li>
+                    <li class="list-group-item">Heat up some oil in a pan and fry the tofu until golden brown.</li>
+                    <li class="list-group-item">Chop the vegetables as you desire.</li>
+                    <li class="list-group-item">Prepare the sauce by mixing tahini, soy sauce, honey, rice vinegar and sesame seeds.</li>
+                    <li class="list-group-item">Prepare the plate by putting on a half the rice, on the other half the vegetables and then pour the sauce over and enjoy!</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+      </div>
+
+       <!--second card section-->
+       <h3 style="text-align: center; padding: 50px; color: #F31559;">Soups</h3>
+      <div class="card-group">
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1616501268826-ee9731c915d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-4" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Parsnip cream soup</h5>
+            <p class="card-text">A refreshing soup, creamy, delicious that's fits perfect with crunchy croutons.</p>
+
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-4">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-4M">Method</button>
+          <!-- Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-4">Parsnip cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">5</span>
+                      Parsnips
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">2</span>
+                      Potatoes
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">0.5</span>
+                      Celery
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">20g</span>
+                      Bread
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Olive oil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Salt
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">a handful</span>
+                      Herbs
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-4M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Parsnip cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Begin by boiling a pot of water and add the salt into it.</li>
+                    <li class="list-group-item">Add the vegetables into boiling water and check when they are soft enough to put them aside.</li>
+                    <li class="list-group-item">Meanwhile, prepare the croutons, chop the bread into cubes and fry them in some olive oil until golden brown.</li>
+                    <li class="list-group-item">Put the boiled veggies into a blender and mix them until it looks like a cream.</li>
+                    <li class="list-group-item">Pour the soup from the blender into a pot and boil it for 2 minutes.</li>
+                    <li class="list-group-item">Serve in a large bowl with the crunchy croutons and some of your favourite herbs.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-5" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Tomato cream soup</h5>
+            <p class="card-text">A sweet creamy soup made from juicy tomatoes, fits perfect with roasted seeds and cream.</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-5">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-5M">Method</button>
+          <!-- Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-5">Tomato cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1kg</span>
+                      Tomatoes
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Bell pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Carrot
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">2</span>
+                      Onion
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">4 pcs</span>
+                      Garlic
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">Drizzle on top</span>
+                      Sour cream
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">Drizzle on top</span>
+                      Olive oil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Salt and pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">A handful</span>
+                      Herbs
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-5M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Tomato cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Bring the oven into heat.</li>
+                    <li class="list-group-item">Grab some fat juicy tomatoes, and the other veggies, rinse them and chop them in large cubes, tomatoes in half.</li>
+                    <li class="list-group-item">Put the tomatoes into a large tray and sprinkle some olive oil, salt, pepper and dried basil.</li>
+                    <li class="list-group-item">Roast the veggies until soft.</li>
+                    <li class="list-group-item">Put the cooked veggies into a blender and blend into a soft cream.</li>
+                    <li class="list-group-item">Boil the mixture for another 3-5 minutes.</li>
+                    <li class="list-group-item">Serve into large bowls with sour cream, herbs and croutons.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1605034997223-1a4819bb58cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-6" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Veggie cream soup</h5>
+            <p class="card-text">A healthy veggie soup where you can add really everything and served with croutons.</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-6">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-6M">Method</button>
+          <!-- Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-6">Veggie cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">10</span>
+                      Tomatoes
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Bell pepper
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Carrot
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">3</span>
+                      Apio sticks
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1</span>
+                      Zucchini
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Olive oil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">200g</span>
+                      Sour cream
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">a handful</span>
+                      Herbs
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">50g</span>
+                      Pomegranate seeds
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-6M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Veggie cream soup</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Heat the oven at 200 C.</li>
+                    <li class="list-group-item">Rinse the vegetables, chop them in large cubes, put them in a large tray, drizzle some olive oil, salt and pepper and let them cook until soften into the oven.</li>
+                    <li class="list-group-item">Prepare the blender and add the vegetables into it when they're all done, add some water if the soup it's too thick.</li>
+                    <li class="list-group-item">Pour the mixture into a pot and add the sour cream into it. Boil for about 5 more minutes.</li>
+                    <li class="list-group-item">Meanwhile, grab some pomegranate seeds.</li>
+                    <li class="list-group-item">Put the soup into bowls and serve it with herbs, crunchy croutons, pomegranate seeds and some olive oil.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--third card section-->
+      <h3 style="text-align: center; padding: 50px; color: #F31559;">Desserts</h3>
+      <div class="card-group">
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1504708706948-13d6cbba4062?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-7" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Quick granola</h5>
+            <p class="card-text">If you have plain coconut yoghurt, granola, blueberries or any kind of forest fruit you can mix them and have a savoury dessert.</p>
+
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-7">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-7M">Method</button>
+          <!-- Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-7">Quick granola</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">300g</span>
+                      Coconut yoghurt
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 handful</span>
+                      Blueberries
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">30g</span>
+                      Granola
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-7M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Quick granola</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Put some coconut yoghurt in a bowl.</li>
+                    <li class="list-group-item">Add your favourite granola.</li>
+                    <li class="list-group-item">Add some blueberries or any other forest fruit.</li>
+                    <li class="list-group-item">Feel free to drizzle some honey or serve it plain.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1542990254-f72699b61a9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-8" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry muffins</h5>
+            <p class="card-text">Only a few ingredients like - dates, blueberries, honey, coconut cream, no bake just chill in the fridge for a few hours and voila!</p>
+
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-8">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-8M">Method</button>
+          <!--Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-8">Blueberry muffins</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">100g</span>
+                      Dates
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">30g</span>
+                      Cocoa
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 cup</span>
+                      Oat milk
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 cup</span>
+                      Blueberries
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">50g</span>
+                      Dark chocolate
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">20g</span>
+                      Raw almonds
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1 tbsp</span>
+                      Honey
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-8M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Blueberry muffins</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Put in a blender the dates, cocoa and the oat milk. You need to soak the dates the night before in some warm water so it can become a paste.</li>
+                    <li class="list-group-item">You will need a muffins tray: portion the mixture for about 1 tbsp in each hole.</li>
+                    <li class="list-group-item">For the cream you will need the coconut cream and the blueberries.</li>
+                    <li class="list-group-item">Beat the cream well until it softens and it's thick enough to stay in place. Add the honey.</li>
+                    <li class="list-group-item">Blend the blueberries and add it in the cream mixture.</li>
+                    <li class="list-group-item">Pour the cream over the dates base and let the tray cool for about 1 hour.</li>
+                    <li class="list-group-item">Meanwhile, melt some dark chocolate and draw some lines with it over the little cupcakes, add the almond slices on top and let it cool for another 30 min.</li>
+                    <li class="list-group-item">Keep them in the fridge for about 3 days and enjoy them cold.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+        <div class="card" style="border: none; margin: 20px;">
+          <img src="https://images.unsplash.com/photo-1504205758521-892897f3a28e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="veg-dish-9" style="border-radius: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate sponge</h5>
+            <p class="card-text">You only need chocolate, flour, vegan plain milk, sugar and vanilla flavour. Bake for 15-20 mins, sprinkle some icing sugar and enjoy.</p>
+
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-9">Ingredients</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal-9M">Method</button>
+          <!--Modal for ingredients-->
+          <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel-9">Chocolate sponge</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Ingredients:</h2>
+                  <!--List-->
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">400ml</span>
+                      Almond milk
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">4</span>
+                      Eggs
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">150g</span>
+                      Almond flour
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">200g</span>
+                      Dark chocolate
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">80g</span>
+                      Plain sugar
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">1tsp</span>
+                      Vanilla extract
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">10g</span>
+                      Baking powder
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="badge bg-success rounded-pill">sprinkle on top</span>
+                      Icing sugar
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal for method-->
+          <div class="modal fade" id="exampleModal-9M" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chocolate sponge</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2>Method:</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Begin by heating up the oven at 200 C.</li>
+                    <li class="list-group-item">Melt the chocolate and set aside until it cools down.</li>
+                    <li class="list-group-item">Beat the eggs whole with the plain sugar until it bubbles on top.</li>
+                    <li class="list-group-item">Add the almond flour, milk, baking powder, chocolate and the vanilla extract. Mix well but not too hard, so it will remain bubbly.</li>
+                    <li class="list-group-item">Put the mixture in a tray and bake in the oven for about 30 mins at 180 C.</li>
+                    <li class="list-group-item">Remove the sponge from the tray and drizzle some icing sugar.</li>
+                  </ul>
+                </ul>
+            </div>
+                          
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--footer-->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">Made with 💚 by Andreea</p>
+        </footer>
+      </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
